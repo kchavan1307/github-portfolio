@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Chavan | Cybersecurity Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Make the html and body elements take up the full height of the viewport */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -34,9 +35,7 @@
         /* Layout for body */
         .container {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 20px;
+            height: 100%; /* Ensure container fills full height */
         }
 
         /* Left Sidebar (Personal details) */
@@ -46,6 +45,7 @@
             color: white;
             padding: 20px;
             box-sizing: border-box;
+            height: 100%; /* Make sidebar take up the full height */
         }
 
         .sidebar img {
@@ -74,6 +74,7 @@
             padding: 20px;
             background-color: white;
             box-sizing: border-box;
+            overflow-y: auto; /* Ensure content scrolls if it's longer than the container */
         }
 
         /* Common styles for sections */
@@ -110,7 +111,7 @@
 
         <!-- Sidebar (Personal Details) -->
         <div class="sidebar">
-            <img src="/Users/krishnachavan/Documents/github-portfolio/Michigan Tech - Career Fair 021324 140116.jpg" alt="Krishna Chavan">
+            <img src="github-portfolio/Michigan Tech - Career Fair 021324 140116.jpg" alt="Krishna Chavan">
             <h2>Krishna Shivaji Chavan</h2>
             <p><strong>University:</strong> Michigan Technological University</p>
             <p><strong>Email:</strong> <a href="mailto:kc0058977@gmail.com">kc0058977@gmail.com</a></p>
