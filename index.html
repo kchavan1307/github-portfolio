@@ -10,79 +10,130 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
             text-align: center;
         }
-        header {
-            background: #333;
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout for body */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Left Sidebar (Personal details) */
+        .sidebar {
+            width: 25%;
+            background-color: #333;
             color: white;
             padding: 20px;
+            box-sizing: border-box;
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
-        a {
+
+        .sidebar h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .sidebar p {
+            margin: 5px 0;
+        }
+
+        .sidebar a {
             color: #007bff;
             text-decoration: none;
         }
+
+        /* About Section on the right */
+        .about {
+            width: 75%;
+            padding: 20px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        /* Common styles for sections */
+        section {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        /* Style for list items */
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
             padding: 5px 0;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Krishna Shivaji Chavan</h1>
-        <p>Cybersecurity Professional | IT & OT Security | Graduating in April 2025 | Open to Full-Time Roles</p>
-    </header>
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#about">About Me</a>
-        <a href="project.html">Projects</a>
-        <a href="experience.html">Work Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="project.html" target="_blank">Projects</a> <!-- Link to projects.html -->
+        <a href="experience.html" target="_blank">Work Experience</a> <!-- Link to work-experience.html -->
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Cybersecurity professional specializing in IT & OT Security, Industrial Control Systems (ICS), and Secure Network Architecture. 
-           I am pursuing my Master’s in Mechatronics (Cybersecurity) at Michigan Technological University and will graduate in <strong>April 2025</strong>.</p>
-        <p>I'm actively looking for full-time opportunities in:</p>
-        <ul>
-            <li>Cybersecurity (IT & OT Security, Vulnerability Management, Threat Analysis, Incident Response)</li>
-            <li>Security Engineering & Operations</li>
-            <li>Application & Network Security</li>
-        </ul>
-    </section>
+    <!-- Main Content Section -->
+    <div class="container">
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>📩 <strong>Email:</strong> <a href="mailto:kchavan@mtu.edu">kchavan@mtu.edu</a></p>
-        <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
-        <p>📁 <strong>GitHub:</strong> <a href="https://github.com/kchavan1307" target="_blank">github.com/kchavan1307</a></p>
-    </section>
+        <!-- Sidebar (Personal Details) -->
+        <div class="sidebar">
+            <img src="/Users/krishnachavan/Documents/github-portfolio/Michigan Tech - Career Fair 021324 140116.jpg" alt="Krishna Chavan">
+            <h2>Krishna Shivaji Chavan</h2>
+            <p><strong>University:</strong> Michigan Technological University</p>
+            <p><strong>Email:</strong> <a href="mailto:kc0058977@gmail.com">kc0058977@gmail.com</a></p>
+            <p><strong>Phone:</strong> +1 123 456 7890</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
+        </div>
+
+        <!-- Main Content (About, Projects, Work Experience) -->
+        <div class="about">
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a Cybersecurity professional specializing in IT & OT Security, Industrial Control Systems (ICS), and Secure Network Architecture. 
+                   I am pursuing my Master’s in Mechatronics (Cybersecurity) at Michigan Technological University and will graduate in <strong>April 2025</strong>.</p>
+                <p>I'm actively looking for full-time opportunities in:</p>
+                <ul>
+                    <li>Cybersecurity (IT & OT Security, Vulnerability Management, Threat Analysis, Incident Response)</li>
+                    <li>Security Engineering & Operations</li>
+                    <li>Application & Network Security</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
 </body>
 </html>
