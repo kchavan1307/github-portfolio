@@ -96,10 +96,18 @@
         }
     </style>
     <script>
-        function toggleDetails(id) {
-            var details = document.getElementById(id);
-            details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        }
+     document.addEventListener("DOMContentLoaded", function() {
+    // Show all job details by default
+    document.querySelectorAll('.job-details').forEach(function(details) {
+        details.style.display = 'block';
+    });
+});
+
+function toggleDetails(id) {
+    var details = document.getElementById(id);
+    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+}
+
     </script>
 </head>
 <body>
