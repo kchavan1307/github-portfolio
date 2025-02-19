@@ -4,63 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience | Krishna Chavan | Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa;
-            text-align: center;
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #222;
+            background-color: #1e3d58;
             color: white;
-            padding: 15px 0;
-            font-size: 24px;
+            padding: 20px;
+            font-size: 28px;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #2a4d70;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #f7f7f7;
         }
         section {
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
         }
         .job {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+            background-color: #f1f1f1;
+            border-left: 5px solid #007bff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .job:last-child {
-            border-bottom: none;
+        .job:hover {
+            background-color: #e0f7fa;
         }
         .job h3 {
+            font-size: 22px;
             color: #007bff;
-            cursor: pointer;
+            margin: 0;
+        }
+        .job p {
+            margin: 10px 0;
         }
         .job-details {
             display: none;
             padding-left: 20px;
+            color: #666;
+        }
+        .job-details p {
+            font-size: 16px;
         }
         a {
             color: #007bff;
             text-decoration: none;
         }
-        nav {
-            background-color: #333;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
+        a:hover {
             text-decoration: underline;
+        }
+        footer {
+            background-color: #2a4d70;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+        footer p {
+            margin: 5px 0;
         }
     </style>
     <script>
@@ -88,7 +120,7 @@
             <h3>Michigan Technological University - Research Assistant</h3>
             <p>August 2024 - Present</p>
             <div class="job-details" id="job1">
-                <p>I am designing and implementing advanced threat mitigation strategies to enhance the security of Industrial Control Systems (ICS) and Operational Technology (OT) environments, ensuring compliance with critical industry standards such as NIST 800-82 and IEC 62443. My work is extending into cloud security, where I am developing secure, cloud-based encrypted communication solutions to protect sensitive data both in transit and at rest, ensuring confidentiality, integrity, and alignment with security best practices. Additionally, I am conducting comprehensive vulnerability assessments of web applications, identifying and remediating security risks by leveraging industry-standard tools like OWASP ZAP, Burp Suite, and manual testing techniques to detect common vulnerabilities such as SQL injection, XSS, and authentication flaws. Throughout these initiatives, I am working closely with development teams to embed robust security controls within the software development lifecycle (SDLC), providing technical guidance on secure coding practices, threat modeling, and risk mitigation strategies to bolster both application and network security.</p>
+                <p>I am designing and implementing advanced threat mitigation strategies to enhance the security of Industrial Control Systems (ICS) and Operational Technology (OT) environments, ensuring compliance with critical industry standards such as NIST 800-82 and IEC 62443. My work is extending into cloud security, where I am developing secure, cloud-based encrypted communication solutions to protect sensitive data both in transit and at rest, ensuring confidentiality, integrity, and alignment with security best practices...</p>
             </div>
         </div>
 
@@ -96,7 +128,7 @@
             <h3>The M.K. Morse Company - IT Engineer Intern</h3>
             <p>May 2024 - August 2024</p>
             <div class="job-details" id="job2">
-                <p>I implemented OT security controls and best practices in manufacturing environments, ensuring full compliance with industry standards such as IEC 62443 and NIST, to fortify the security of critical infrastructure. To enhance both visibility and security, I designed and documented network topology and architecture drawings for industrial systems, providing a clear and organized view of the security framework. I worked closely with cross-functional teams to integrate security measures into system operations, ensuring that security was seamlessly embedded into everyday processes. In addition, I implemented technical security controls aligned with enterprise security frameworks, actively monitoring security systems such as firewalls and IDS/IPS to detect and mitigate potential threats. Throughout this process, I coordinated with various teams, including Network Engineering, Development, Incident Response, Control Engineering, IT, and Maintenance, to strengthen the overall system security, ensuring comprehensive protection against emerging cyber threats.</p>
+                <p>I implemented OT security controls and best practices in manufacturing environments, ensuring full compliance with industry standards such as IEC 62443 and NIST...</p>
             </div>
         </div>
 
@@ -104,7 +136,7 @@
             <h3>Michigan Technological University - Research Assistant</h3>
             <p>September 2023 - April 2024</p>
             <div class="job-details" id="job3">
-                <p>I created and implemented security assessment labs to identify vulnerabilities using penetration testing tools, which significantly enhanced the detection of potential risks and strengthened the overall security posture of the systems. Building upon this foundation, I led security awareness training sessions for both faculty and students, fostering a proactive cybersecurity culture across the university and ensuring everyone was well-informed on best practices. Additionally, I developed and maintained detailed documentation outlining security best practices, vulnerability management procedures, and risk assessment methodologies, providing a consistent and structured approach to cybersecurity throughout the institution. This initiative extended into OT/ICS systems, where I designed and implemented comprehensive risk assessment frameworks and mitigation strategies, further bolstering security measures for critical infrastructure and ensuring the integrity of the systems in place.</p>
+                <p>I created and implemented security assessment labs to identify vulnerabilities using penetration testing tools...</p>
             </div>
         </div>
 
@@ -112,7 +144,7 @@
             <h3>Infosys Limited - Information Systems Engineer</h3>
             <p>June 2022 - August 2023</p>
             <div class="job-details" id="job4">
-                <p>In this role, I performed comprehensive Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) assessments to identify and remediate critical vulnerabilities in web applications, such as SQL injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF). By leveraging SAST, I analyzed source code and binaries to detect vulnerabilities early in the software development lifecycle (SDLC), allowing for immediate remediation before issues could make it to production. Additionally, DAST was utilized to examine running applications in real-time, uncovering vulnerabilities that may not have been visible through static analysis alone. Collaborating closely with development teams, I integrated these security practices directly into the SDLC, ensuring that security considerations were embedded from the early stages of development and maintained throughout the lifecycle. This proactive approach enabled us to identify vulnerabilities early and resolve them, reducing the likelihood of security issues in the final product. Working alongside the development teams, I also provided direct support to fix identified vulnerabilities, ensuring that all applications were thoroughly secured before deployment, ultimately ensuring a robust, safe application environment aligned with industry standards.</p>
+                <p>In this role, I performed comprehensive Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) assessments to identify and remediate critical vulnerabilities...</p>
             </div>
         </div>
 
@@ -120,7 +152,7 @@
             <h3>Ognibene India Pvt Ltd - Trainee Engineer</h3>
             <p>September 2019 - December 2021</p>
             <div class="job-details" id="job5">
-                <p>In this role, I implemented incident response protocols for OT/ICS cybersecurity breaches, ensuring that effective measures were in place to detect, respond to, and recover from security incidents. I also played a key role in assisting with the "security by design" implementation for the introduction of new equipment, ensuring that security considerations were integrated into the system from the outset. As part of this, I created and maintained comprehensive documentation for the security of industrial control systems, providing clear guidelines for ongoing security management and incident handling. Additionally, I actively participated in planning and design meetings, collaborating with teams to discuss and implement security solutions for industrial environments. A significant part of my responsibilities included implementing access controls for critical machinery and production systems, ensuring that only authorized personnel could access sensitive systems. I also managed secure data storage solutions and access authorization processes to protect critical data from unauthorized access or compromise. Through these efforts, I contributed to a robust security posture for OT/ICS systems, enhancing both the prevention and response capabilities for cybersecurity risks.</p>
+                <p>In this role, I implemented incident response protocols for OT/ICS cybersecurity breaches...</p>
             </div>
         </div>
     </section>
@@ -131,5 +163,10 @@
         <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
         <p>📁 <strong>GitHub:</strong> <a href="https://github.com/kchavan1307" target="_blank">github.com/kchavan1307</a></p>
     </section>
+
+    <footer>
+        <p>© 2025 Krishna Chavan. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
