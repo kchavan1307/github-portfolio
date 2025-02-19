@@ -9,8 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e0f7fa;
             text-align: center;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+            font-size: 24px;
         }
         section {
             padding: 20px;
@@ -18,6 +24,25 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .job {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .job:last-child {
+            border-bottom: none;
+        }
+        .job h3 {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .job-details {
+            display: none;
+            padding-left: 20px;
         }
         a {
             color: #007bff;
@@ -38,33 +63,81 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <header>Krishna Chavan | Cybersecurity Portfolio</header>
+    
     <nav>
         <a href="index.html">Home</a>
         <a href="project.html">Projects</a>
-        <a href="education">Education</a>
+        <a href="education.html">Education</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="work-experience">
         <h2>Work Experience</h2>
-        <div class="job">
-            <h3><a href="#job1">Cybersecurity Intern - XYZ Company</a></h3>
-            <p>June 2023 - August 2023</p>
-            <p>Assisted in the analysis of network traffic, threat modeling, and vulnerability management for critical infrastructure.</p>
+        
+        <div class="job" onclick="toggleDetails('job1')">
+            <h3>Michigan Technological University - Research Assistant</h3>
+            <p>August 2024 - Present</p>
+            <div class="job-details" id="job1">
+                <p>Developing and implementing threat mitigation measures for Industrial Control Systems (ICS) and OT Environment.</p>
+                <p>Implementing cloud-based encrypted data transmission with a focus on confidentiality and integrity.</p>
+                <p>Conducting vulnerability assessments of web applications to identify and remediate risks.</p>
+                <p>Partnering with development teams to embed security controls and provide technical guidance.</p>
+            </div>
         </div>
-        <div class="job">
-            <h3><a href="#job2">Security Consultant - ABC Solutions</a></h3>
-            <p>May 2022 - December 2022</p>
-            <p>Provided recommendations on IT security strategies and incident response plans for multiple clients.</p>
+
+        <div class="job" onclick="toggleDetails('job2')">
+            <h3>The M.K. Morse Company - IT Engineer Intern</h3>
+            <p>May 2024 - August 2024</p>
+            <div class="job-details" id="job2">
+                <p>Implemented technical security controls following enterprise security frameworks.</p>
+                <p>Monitored security systems including firewalls and IDS/IPS.</p>
+                <p>Coordinated with cross-functional teams to enhance system security.</p>
+            </div>
         </div>
-        <!-- More jobs can be added here -->
+
+        <div class="job" onclick="toggleDetails('job3')">
+            <h3>Michigan Technological University - Research Assistant</h3>
+            <p>September 2023 - April 2024</p>
+            <div class="job-details" id="job3">
+                <p>Created security assessment labs for vulnerability identification using penetration testing tools.</p>
+                <p>Conducted security awareness training sessions for faculty and students.</p>
+                <p>Created security labs for data analysis using SIEM tools (Splunk Enterprise).</p>
+                <p>Developed documentation for security best practices and vulnerability management.</p>
+            </div>
+        </div>
+
+        <div class="job" onclick="toggleDetails('job4')">
+            <h3>Infosys Limited - Information Systems Engineer</h3>
+            <p>June 2022 - August 2023</p>
+            <div class="job-details" id="job4">
+                <p>Identified and mitigated security risks including OWASP Top 10 vulnerabilities.</p>
+                <p>Performed security assessments of web applications using SAST and DAST tools.</p>
+                <p>Created vulnerability assessment reports with detailed remediation steps.</p>
+                <p>Worked with development teams to implement secure coding practices.</p>
+            </div>
+        </div>
+
+        <div class="job" onclick="toggleDetails('job5')">
+            <h3>Ognibene India Pvt Ltd - Trainee Engineer</h3>
+            <p>September 2019 - December 2021</p>
+            <div class="job-details" id="job5">
+                <p>Developed incident response protocols for OT security incidents.</p>
+                <p>Implemented access controls for critical machinery and production systems.</p>
+                <p>Managed secure data storage solutions and access authorization processes.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>📩 <strong>Email:</strong> <a href="mailto:kchavan@mtu.edu">kchavan@mtu.edu</a></p>
