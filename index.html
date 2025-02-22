@@ -4,55 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Chavan | Cybersecurity Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Home page specific styles */
+        .home-page .image-left-section {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background: #1e3d58;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Common styles for all pages */
+        nav {
+            background-color: #2a4d70;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #f7f7f7;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2a4d70;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
-<body>
+<body class="home-page">
+    <!-- Left Section (Visible only on Home Page) -->
+    <div class="image-left-section">
+        <h2>Welcome</h2>
+        <p>Cybersecurity Professional</p>
+    </div>
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#about">About</a>
-        <a href="project.html">Projects</a> <!-- Link to Projects page (no target="_blank") -->
-        <a href="education.html">Education</a> <!-- Link to Education page (no target="_blank") -->
-        <a href="experience.html">Work Experience</a> <!-- Link to Work Experience page (no target="_blank") -->
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <img src="/Michigan Tech - Career Fair 021324 140116.jpg" alt="Krishna Chavan">
-            <h2>Krishna Shivaji Chavan</h2>
-            <p>Cybersecurity Engineer | Security Analyst</p>
-            <p><strong>Email:</strong> <a href="mailto:kchavan@mtu.edu">kchavan@mtu.edu</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
-        </aside>
+    <section id="home">
+        <h1>Krishna Chavan</h1>
+        <p>Welcome to my Cybersecurity Portfolio</p>
+        <p>Explore my work and experience in Cybersecurity.</p>
+    </section>
 
-        <!-- Main Content -->
-        <main>
-            <!-- About Section -->
-            <section id="about">
-                <h2>About Me</h2>
-                <p>
-                    Hi there! I'm <strong>Krishna Shivaji Chavan</strong>, a passionate cybersecurity professional specializing in IT and OT security. 
-                    I am pursuing my Master’s in Mechatronics (Cybersecurity) at Michigan Technological University, focusing on securing industrial control systems, application security, and vulnerability management. 
-                    With hands-on experience in penetration testing, ethical hacking, and security operations, I aim to enhance the security posture of critical systems.
-                </p>
-            </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📩 <strong>Email:</strong> <a href="mailto:kchavan@mtu.edu">kchavan@mtu.edu</a></p>
+        <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
+        <p>📁 <strong>GitHub:</strong> <a href="https://github.com/kchavan1307" target="_blank">github.com/kchavan1307</a></p>
+    </section>
 
-            <!-- Skills Section -->
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>IT & OT Security</li>
-                    <li>Vulnerability Management</li>
-                    <li>Threat Analysis</li>
-                    <li>Application Security</li>
-                    <li>Security Engineering</li>
-                    <li>Penetration Testing</li>
-                </ul>
-            </section>
-        </main>
-    </div>
-
+    <footer>
+        <p>© 2025 Krishna Chavan. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
