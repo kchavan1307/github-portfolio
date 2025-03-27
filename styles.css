@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Professional font */
-    background-color: #87CEEB; /* Light Blue/Sky Blue background */
+    font-family: 'Arial', sans-serif; /* Professional, clean font */
+    background-color: #87CEEB; /* Light Blue background */
     color: #333; /* Dark text for readability */
     margin: 0;
     padding: 0;
@@ -12,8 +12,8 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 15px;
-    background-color: #003366; /* Dark blue navigation bar */
+    padding: 12px;
+    background-color: #003366; /* Dark blue background */
     color: #fff;
 }
 
@@ -32,20 +32,21 @@ nav a:hover {
 /* Layout */
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    gap: 20px;
 }
 
 /* Sidebar */
 .sidebar {
-    width: 30%;
+    width: 100%;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .sidebar img {
@@ -56,14 +57,16 @@ nav a:hover {
 }
 
 .sidebar h2 {
-    margin-top: 10px;
-    font-size: 22px;
+    margin-top: 15px;
+    font-size: 24px;
     color: #003366;
+    font-weight: 600;
 }
 
 .sidebar p {
     font-size: 16px;
     color: #555;
+    margin-top: 5px;
 }
 
 .sidebar a {
@@ -78,7 +81,7 @@ nav a:hover {
 
 /* Main Content */
 main {
-    width: 70%;
+    width: 100%;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -87,26 +90,28 @@ main {
 
 h2 {
     color: #003366;
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
     border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 p {
     line-height: 1.6;
     font-size: 16px;
     color: #555;
+    margin-bottom: 20px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 li {
-    padding: 5px 0;
     font-size: 16px;
+    margin-bottom: 8px;
 }
 
 li:hover {
@@ -114,6 +119,22 @@ li:hover {
 }
 
 /* Contact Section */
+#contact {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
 #contact a {
     color: #003366;
     text-decoration: none;
