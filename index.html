@@ -22,7 +22,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <h1>Hi, I'm <span class="highlight">Krishna Shivaji Chavan</span></h1>
-        <p>Cybersecurity professional with expertise in IT & OT Security, Threat Analysis, and Security Engineering.</p>
+        <p id="typing-text"></p>
         <div class="buttons">
             <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank" class="btn linkedin">
                 <i class="fab fa-linkedin"></i> LinkedIn
@@ -36,23 +36,22 @@
         </div>
     </section>
 
-    <!-- Sections -->
-    <section id="about" class="card fade-in">
+    <!-- Sections with SVG Graphics -->
+    <section id="about" class="card">
         <h2>About Me</h2>
         <p>
-            I am a cybersecurity professional and master's student in Mechatronics (Cybersecurity) at Michigan Technological University. 
-            I specialize in securing IT & OT environments, threat analysis, and security engineering.
+            I am a cybersecurity professional and master's student in Mechatronics (Cybersecurity) at Michigan Technological University.
             Passionate about protecting digital infrastructures and mitigating cyber threats.
         </p>
     </section>
 
-    <section id="experience" class="card fade-in">
+    <section id="experience" class="card">
         <h2>Experience</h2>
         <p><strong>Research Assistant, Michigan Technological University</strong></p>
         <p>Working on IT & OT Security, Cloud Security, and Threat Analysis.</p>
     </section>
 
-    <section id="projects" class="card fade-in">
+    <section id="projects" class="card">
         <h2>Projects</h2>
         <ul>
             <li>Industrial Control System Security Assessment</li>
@@ -60,32 +59,16 @@
         </ul>
     </section>
 
-    <section id="skills" class="card fade-in">
+    <section id="skills" class="card">
         <h2>Skills</h2>
         <p>Cybersecurity, IT & OT Security, Threat Analysis, Security Engineering, Incident Response, Network Security</p>
     </section>
 
-    <script>
-        // Smooth scrolling animation
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+    <!-- SVG Background -->
+    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <path d="M0,48 C30,90 60,10 90,60 C120,110 150,50 180,80 C210,110 240,20 270,50 C300,80 330,40 360,80 L360,120 L0,120 Z" fill="#141e30"></path>
+    </svg>
 
-        // Fade-in animation on scroll
-        const cards = document.querySelectorAll('.fade-in');
-        window.addEventListener('scroll', () => {
-            cards.forEach(card => {
-                if (card.getBoundingClientRect().top < window.innerHeight - 50) {
-                    card.classList.add('visible');
-                }
-            });
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
