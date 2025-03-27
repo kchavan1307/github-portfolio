@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Icons -->
 </head>
 <body>
-    <header>
-        <h1>[Your Name]</h1>
-        <p>[Your Profession, e.g., Web Developer | Designer]</p>
-        <button id="theme-toggle">Toggle Dark Mode</button>
+    <header class="hero">
+        <h1 class="fade-in">Your Name</h1>
+        <p class="fade-in">Web Developer | Creative Coder</p>
+        <nav>
+            <a href="https://github.com/username" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/username" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </nav>
     </header>
-    
-    <section id="about">
+
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Hi! I’m [Your Name], a [short description, e.g., passionate developer with a focus on creating user-friendly applications]. Check out my work below!</p>
+        <p>Hi! I’m a passionate developer who loves building vibrant, user-friendly projects.</p>
     </section>
-    
-    <section id="projects">
+
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>[Description of your first project, e.g., A responsive website built with HTML and CSS.]</p>
-            <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>[Description of your second project, e.g., A JavaScript-based calculator app.]</p>
-            <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A colorful app built with React. <a href="https://github.com/username/project1">View on GitHub</a></p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A fun game using JavaScript. <a href="https://github.com/username/project2">View on GitHub</a></p>
+            </div>
+            <!-- Add more projects -->
         </div>
     </section>
-    
+
     <footer>
-        <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p><a href="https://github.com/username" target="_blank">GitHub Profile</a></p>
+        <p>© 2025 Your Name</p>
     </footer>
 
     <script src="script.js"></script>
