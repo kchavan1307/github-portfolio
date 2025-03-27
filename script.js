@@ -24,3 +24,32 @@ document.styleSheets[0].insertRule(`
         to { transform: translateY(0); opacity: 1; }
     }
 `, 0);
+
+// Modal functionality
+const items = document.querySelectorAll('.project-card, .timeline-item');
+const modals = document.querySelectorAll('.modal');
+const closeButtons = document.querySelectorAll('.close');
+
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        const modalId = item.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        modal.style.display = 'none';
+    });
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', (event) => {
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
