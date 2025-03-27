@@ -1,5 +1,5 @@
-// Animate project cards on scroll
-const projectCards = document.querySelectorAll('.project-card');
+// Animate project cards and timeline items on scroll
+const animatedElements = document.querySelectorAll('.project-card, .timeline-item');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -9,11 +9,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 
-projectCards.forEach(card => observer.observe(card));
+animatedElements.forEach(element => observer.observe(element));
 
 // Add animate class styles in CSS
 document.styleSheets[0].insertRule(`
-    .project-card.animate {
+    .project-card.animate, .timeline-item.animate {
         animation: slideUp 0.5s ease-out forwards;
     }
 `, 0);

@@ -12,12 +12,21 @@ body {
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4); /* Colorful gradient */
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
     color: white;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .hero h1 {
     font-size: 3rem;
@@ -53,6 +62,7 @@ body {
 @keyframes fadeIn {
     to { opacity: 1; }
 }
+.hero .profile-pic { animation-delay: 0.1s; }
 .hero h1 { animation-delay: 0.2s; }
 .hero p { animation-delay: 0.4s; }
 
@@ -65,6 +75,33 @@ body {
     font-size: 2.5rem;
     color: #ff6b6b;
     margin-bottom: 2rem;
+}
+
+/* Timeline for Education & Work Experience */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline-item {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s;
+}
+.timeline-item:hover {
+    transform: translateX(10px);
+}
+.timeline-item h3 {
+    color: #4ecdc4;
+    margin: 0 0 0.5rem;
+}
+.timeline-item p {
+    margin: 0.3rem 0;
 }
 
 /* Project Grid */
