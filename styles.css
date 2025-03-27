@@ -1,28 +1,30 @@
-/* General Styling */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #141e30, #243b55);
     color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
 header {
-    background: #000;
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
@@ -34,16 +36,17 @@ nav a {
 
 nav a:hover {
     color: #4facfe;
+    transform: scale(1.1);
 }
 
 /* Hero Section */
 .hero {
-    margin-top: 80px;
-    padding: 50px;
+    margin-top: 100px;
+    padding: 60px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -68,8 +71,8 @@ nav a:hover {
 .btn {
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -77,31 +80,37 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.btn.linkedin {
-    background: #0077b5;
-}
-
-.btn.github {
-    background: #333;
-}
-
-.btn.email {
-    background: #f39c12;
-}
+.btn.linkedin { background: #0077b5; }
+.btn.github { background: #333; }
+.btn.email { background: #f39c12; }
 
 .btn:hover {
     opacity: 0.8;
+    transform: scale(1.05);
 }
 
 /* Sections */
 .card {
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
-    margin: 30px auto;
+    margin: 50px auto;
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Responsive */
