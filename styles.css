@@ -77,6 +77,107 @@ body {
     margin-bottom: 2rem;
 }
 
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.about-text:hover {
+    transform: translateY(-5px);
+}
+.intro {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.highlight {
+    color: #ff6b6b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.details {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+.details strong {
+    color: #4ecdc4;
+    font-weight: 600;
+}
+.about-btn {
+    background: #ff6b6b;
+    color: white;
+    margin-top: 1rem;
+}
+.about-btn:hover {
+    background: #4ecdc4;
+    color: white;
+}
+.about-skills {
+    flex: 1;
+    min-width: 250px;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.about-skills h3 {
+    color: #ff6b6b;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+.skills-list li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+}
+.skills-list i {
+    color: #4ecdc4;
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .about-text, .about-skills {
+        padding: 1rem;
+    }
+    .intro {
+        font-size: 1.4rem;
+    }
+    .details {
+        font-size: 1rem;
+    }
+}
+
 /* Timeline for Education & Work Experience */
 .timeline {
     max-width: 800px;
@@ -90,7 +191,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
- cercando: pointer;
+    cursor: pointer;
 }
 .timeline-item:hover {
     transform: translateX(10px);
@@ -127,7 +228,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 120px; /* Ensures consistent height */
+    min-height: 120px;
 }
 .project-card:hover {
     transform: translateY(-10px);
@@ -136,14 +237,14 @@ body {
 .project-card h3 {
     color: #4ecdc4;
     margin: 0;
-    font-size: 1.2rem; /* Slightly smaller for cleaner look */
+    font-size: 1.2rem;
 }
 .project-icon {
-    font-size: 2rem; /* For Font Awesome icon */
+    font-size: 2rem;
     color: #ff6b6b;
     margin: 0.5rem auto;
     display: block;
-    max-width: 50px; /* For image option */
+    max-width: 50px;
     height: auto;
 }
 
@@ -216,10 +317,10 @@ body {
     margin: 0.5rem 0;
 }
 .modal-content p strong {
-    color: #333; /* Default for labels */
+    color: #333;
 }
-.modal-content p:nth-child(4) { /* Targets "Skills Learned" paragraph */
-    color: #ff6b6b; /* Highlight skills in red */
+.modal-content p:nth-child(4) {
+    color: #ff6b6b;
     font-style: italic;
 }
 .modal-content a {

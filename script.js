@@ -1,10 +1,11 @@
 // Animate project cards, timeline items, and contact info on scroll
-const animatedElements = document.querySelectorAll('.project-card, .timeline-item, .contact-info');
+const animatedElements = document.querySelectorAll('.project-card, .timeline-item, .contact-info, .about-text, .about-skills');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate');
+            observer.unobserve(entry.target); // Stop observing after animation
         }
     });
 }, { threshold: 0.3 });
@@ -13,7 +14,7 @@ animatedElements.forEach(element => observer.observe(element));
 
 // Add animate class styles in CSS
 document.styleSheets[0].insertRule(`
-    .project-card.animate, .timeline-item.animate, .contact-info.animate {
+    .project-card.animate, .timeline-item.animate, .contact-info.animate, .about-text.animate, .about-skills.animate {
         animation: slideUp 0.5s ease-out forwards;
     }
 `, 0);
@@ -34,7 +35,11 @@ items.forEach(item => {
     item.addEventListener('click', () => {
         const modalId = item.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
-        modal.style.display = 'block';
+        if (modal) {
+            modal.style.display = 'block';
+        } else {
+            console.warn(`Modal with ID ${modalId} not found`);
+        }
     });
 });
 
@@ -53,3 +58,6 @@ window.addEventListener('click', (event) => {
         }
     });
 });
+
+// Dynamic footer year
+document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} Krishna Chavan`;

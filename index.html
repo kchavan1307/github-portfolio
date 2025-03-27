@@ -3,103 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Krishna Chavan - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="hero">
-        <img src="kc.jpeg" alt="Your Profile Picture" class="profile-pic fade-in">
-        <h1 class="fade-in">Your Name</h1>
-        <p class="fade-in">Web Developer | Creative Coder</p>
+        <img src="kc.jpeg" alt="Krishna Chavan's Profile Picture" class="profile-pic fade-in">
+        <h1 class="fade-in">Krishna Chavan</h1>
+        <p class="fade-in">Control Systems Engineer | Automation Enthusiast</p>
         <nav>
-            <a href="https://github.com/username" class="btn"><i class="fab fa-github"></i> https://github.com/kchavan1307</a>
-            <a href="https://linkedin.com/in/username" class="btn"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/krishna-chavan-4b250a173</a>
+            <a href="https://github.com/kchavan1307" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/krishna-chavan-4b250a173" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </nav>
     </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Control systems engineer with advanced proficiency in PLC programming (e.g., Siemens S7, Allen-Bradley), HMI design (FactoryTalk, WinCC), and SCADA development for real-time industrial monitoring. I specialize in secure integration of control devices into networked architectures, leveraging protocols like Modbus, OPC UA, Profibus, and Ethernet/IP. Experienced in configuring and troubleshooting industrial network devices (switches, routers, gateways) for robust connectivity. Passionate about automation and Industry 4.0, I focus on optimizing processes through cyber-secure IIoT solutions, edge computing, and data-driven system interoperability.</p>
-    </section>
+    <main>
+        <section id="about" class="section about-section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p class="intro fade-in">I'm a <span class="highlight">Control Systems Engineer</span> passionate about automation and Industry 4.0.</p>
+                    <p class="details fade-in" style="animation-delay: 0.2s;">
+                        With advanced expertise in <strong>PLC programming</strong> (Siemens S7, Allen-Bradley), <strong>HMI design</strong> (FactoryTalk, WinCC), and <strong>SCADA development</strong>, I build real-time industrial monitoring solutions. I specialize in integrating control devices into secure networked architectures using protocols like Modbus, OPC UA, Profibus, and Ethernet/IP.
+                    </p>
+                    <p class="details fade-in" style="animation-delay: 0.4s;">
+                        My focus? Optimizing processes with <strong>cyber-secure IIoT solutions</strong>, edge computing, and data-driven interoperability—bridging the gap between hardware and software for smarter systems.
+                    </p>
+                    <a href="#contact" class="btn about-btn fade-in" style="animation-delay: 0.6s;">Get in Touch</a>
+                </div>
+                <div class="about-skills">
+                    <h3 class="fade-in" style="animation-delay: 0.8s;">Key Skills</h3>
+                    <ul class="skills-list">
+                        <li class="fade-in" style="animation-delay: 0.9s;"><i class="fas fa-microchip"></i> PLC & HMI</li>
+                        <li class="fade-in" style="animation-delay: 1s;"><i class="fas fa-network-wired"></i> Industrial Networking</li>
+                        <li class="fade-in" style="animation-delay: 1.1s;"><i class="fas fa-shield-alt"></i> ICS Security</li>
+                        <li class="fade-in" style="animation-delay: 1.2s;"><i class="fas fa-cloud"></i> IIoT & Edge Computing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Master of Science</h3>
-                <p>Michigan Technological University  2023-2025</p>
-                <p>Graduated with honors, focused on web development and algorithms.</p>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Master of Science</h3>
+                    <p>Michigan Technological University  2023-2025</p>
+                    <p>Graduated with honors, focused on web development and algorithms.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Bachelor of Engineering</h3>
+                    <p>Savitribai Phule Pune University   2016-2019</p>
+                    <p>Specialized in mathematics and physics.</p>
+                </div>
             </div>
-            <div class="timeline-item">
-                <h3>Bachelor of Engineering</h3>
-                <p>Savitribai Phule Pune University   2016-2019</p>
-                <p>Specialized in mathematics and physics.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="work-experience" class="section">
-        <h2>Work Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item" data-modal="work1">
-                <h3>Engineering Intern</h3>
-                <p>The M.K.Morse Company</p>
-                <p class="abstract">Built responsive web apps.</p>
+        <section id="work-experience" class="section">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-modal="work1">
+                    <h3>Engineering Intern</h3>
+                    <p>The M.K.Morse Company</p>
+                    <p class="abstract">Built responsive web apps.</p>
+                </div>
+                <div class="timeline-item" data-modal="work2">
+                    <h3>Information Systems Engineer</h3>
+                    <p>Infosys Limited</p>
+                    <p class="abstract">Assisted in dashboard development.</p>
+                </div>
+                <div class="timeline-item" data-modal="work3">
+                    <h3>Trainee Engineer</h3>
+                    <p>Ognibene India Pvt Ltd</p>
+                    <p class="abstract">Optimized backend APIs.</p>
+                </div>
+                <div class="timeline-item" data-modal="work4">
+                    <h3>Intern</h3>
+                    <p>SKF India Ltd</p>
+                    <p class="abstract">Created client websites.</p>
+                </div>
             </div>
-            <div class="timeline-item" data-modal="work2">
-                <h3>Information Systems Engineer</h3>
-                <p>Infosys Limited</p>
-                <p class="abstract">Assisted in dashboard development.</p>
-            </div>
-            <div class="timeline-item" data-modal="work3">
-                <h3>Trainee Engineer</h3>
-                <p>Ognibene India Pvt Ltd</p>
-                <p class="abstract">Optimized backend APIs.</p>
-            </div>
-            <div class="timeline-item" data-modal="work4">
-                <h3>Intern</h3>
-                <p>SKF India Ltd</p>
-                <p class="abstract">Created client websites.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card" data-modal="project1">
-                <h3>Design and modification of propeller shaft generating electricity</h3>
-                <i class="fas fa-fan project-icon"></i>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-modal="project1">
+                    <h3>Design and modification of propeller shaft generating electricity</h3>
+                    <i class="fas fa-fan project-icon"></i>
+                </div>
+                <div class="project-card" data-modal="project2">
+                    <h3>Development of an end effector for FANUC robot</h3>
+                </div>
+                <div class="project-card" data-modal="project3">
+                    <h3>Exploring Web Vulnerabilities: Leveraging Cookies and Session IDs</h3>
+                </div>
+                <div class="project-card" data-modal="project4">
+                    <h3>ICS Security Mechatronics</h3>
+                </div>
+                <div class="project-card" data-modal="project5">
+                    <h3>Conveyor Line Color Object Sorting</h3>
+                </div>
+                <div class="project-card" data-modal="project6">
+                    <h3>Stepper Motor Control Using Light Sensor</h3>
+                </div>
+                <div class="project-card" data-modal="project7">
+                    <h3>Secure Industrial Data Transmission</h3>
+                </div>
             </div>
-            <div class="project-card" data-modal="project2">
-                <h3>Development of an end effector for FANUC robot</h3>
-            </div>
-            <div class="project-card" data-modal="project3">
-                <h3>Exploring Web Vulnerabilities: Leveraging Cookies and Session IDs</h3>
-            </div>
-            <div class="project-card" data-modal="project4">
-                <h3>ICS Security Mechatronics</h3>
-            </div>
-            <div class="project-card" data-modal="project5">
-                <h3>Conveyor Line Color Object Sorting using A Monochrome Camera, Colored Light and RGB Filters</h3>
-            </div>
-            <div class="project-card" data-modal="project6">
-                <h3>Stepper Motor Control Using Light Sensor with LabVIEW and Simulink</h3>
-            </div>
-            <div class="project-card" data-modal="project7">
-                <h3>Secure Industrial Data Transmission and Security Assessment for ICS Systems</h3>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
-        </div>
-    </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:krishna@example.com">krishna@example.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+            </div>
+        </section>
+    </main>
 
     <!-- Modals for Work Experience -->
     <div id="work1" class="modal">
@@ -147,72 +169,72 @@
             <p><strong>Abstract:</strong> Designed a power-generating shaft.</p>
             <p><strong>Details:</strong> Engineered and modified a propeller shaft to generate electricity, integrating CAD designs and simulations. Optimized efficiency by 15% through iterative testing.</p>
             <p><strong>Skills Learned:</strong> CAD Design, Simulation Tools, Mechanical Engineering, Optimization</p>
-            <p><a href="https://github.com/username/propeller-shaft-generator" target="_blank">View on GitHub</a></p>
+            <p><a href="https://github.com/kchavan1307/propeller-shaft-generator" target="_blank">View on GitHub</a></p>
         </div>
     </div>
     <div id="project2" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
             <h3>Development of an end effector for FANUC robot</h3>
-            <p><strong>Abstract:</strong> A fun JavaScript game.</p>
-            <p><strong>Details:</strong> Created an interactive 2D game using vanilla JavaScript and Canvas API. Includes multiple levels and a leaderboard system.</p>
-            <p><strong>Skills Learned:</strong> JavaScript, Canvas API, Game Development, UI Design</p>
-            <p><a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+            <p><strong>Abstract:</strong> Designed a robotic end effector.</p>
+            <p><strong>Details:</strong> Engineered a custom end effector for a FANUC robot, integrating sensors and actuators for precise material handling.</p>
+            <p><strong>Skills Learned:</strong> Robotics, Mechanical Design, Sensor Integration</p>
+            <p><a href="https://github.com/kchavan1307/fanuc-end-effector" target="_blank">View on GitHub</a></p>
         </div>
     </div>
     <div id="project3" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
             <h3>Exploring Web Vulnerabilities: Leveraging Cookies and Session IDs</h3>
-            <p><strong>Abstract:</strong> A Python automation tool.</p>
-            <p><strong>Details:</strong> Developed a script to automate repetitive tasks using Python and Selenium. Saved 10+ hours of manual work per week.</p>
-            <p><strong>Skills Learned:</strong> Python, Selenium, Automation, Scripting</p>
-            <p><a href="https://github.com/username/project3" target="_blank">View on GitHub</a></p>
+            <p><strong>Abstract:</strong> Analyzed web security flaws.</p>
+            <p><strong>Details:</strong> Investigated vulnerabilities in web applications by exploiting cookies and session IDs, proposing mitigation strategies.</p>
+            <p><strong>Skills Learned:</strong> Cybersecurity, Web Security, Ethical Hacking</p>
+            <p><a href="https://github.com/kchavan1307/web-vulnerabilities" target="_blank">View on GitHub</a></p>
         </div>
     </div>
     <div id="project4" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
             <h3>ICS Security Mechatronics</h3>
-            <p><strong>Abstract:</strong> A full-stack e-commerce site.</p>
-            <p><strong>Details:</strong> Built a MERN-stack (MongoDB, Express, React, Node.js) e-commerce platform with payment integration and user authentication.</p>
-            <p><strong>Skills Learned:</strong> MongoDB, Express, React, Node.js, Full-Stack Development</p>
-            <p><a href="https://github.com/username/project4" target="_blank">View on GitHub</a></p>
+            <p><strong>Abstract:</strong> Secured industrial systems.</p>
+            <p><strong>Details:</strong> Developed security protocols for mechatronic systems in industrial control environments, integrating encryption and monitoring.</p>
+            <p><strong>Skills Learned:</strong> ICS Security, Mechatronics, Encryption</p>
+            <p><a href="https://github.com/kchavan1307/ics-security" target="_blank">View on GitHub</a></p>
         </div>
     </div>
     <div id="project5" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
-            <h3>Conveyor Line Color Object Sorting using A Monochrome Camera, Colored Light and RGB Filters</h3>
-            <p><strong>Abstract:</strong> A mobile-first portfolio.</p>
-            <p><strong>Details:</strong> Designed a responsive portfolio site using HTML, CSS, and JavaScript, optimized for mobile devices with a clean UI.</p>
-            <p><strong>Skills Learned:</strong> HTML, CSS, JavaScript, Responsive Design</p>
-            <p><a href="https://github.com/username/project5" target="_blank">View on GitHub</a></p>
+            <h3>Conveyor Line Color Object Sorting</h3>
+            <p><strong>Abstract:</strong> Automated object sorting.</p>
+            <p><strong>Details:</strong> Built a conveyor system using a monochrome camera, colored lights, and RGB filters for real-time color-based sorting.</p>
+            <p><strong>Skills Learned:</strong> Computer Vision, Automation, Hardware Integration</p>
+            <p><a href="https://github.com/kchavan1307/conveyor-sorting" target="_blank">View on GitHub</a></p>
         </div>
     </div>
     <div id="project6" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
-            <h3>Stepper Motor Control Using Light Sensor with LabVIEW and Simulink</h3>
-            <p><strong>Abstract:</strong> A data visualization dashboard.</p>
-            <p><strong>Details:</strong> Created an interactive dashboard with D3.js and React to visualize real-time data from a public API.</p>
-            <p><strong>Skills Learned:</strong> D3.js, React, Data Visualization, API Integration</p>
-            <p><a href="https://github.com/username/project6" target="_blank">View on GitHub</a></p>
+            <h3>Stepper Motor Control Using Light Sensor</h3>
+            <p><strong>Abstract:</strong> Controlled motors with sensors.</p>
+            <p><strong>Details:</strong> Designed a system to control stepper motors using light sensors, implemented with LabVIEW and Simulink.</p>
+            <p><strong>Skills Learned:</strong> LabVIEW, Simulink, Motor Control</p>
+            <p><a href="https://github.com/kchavan1307/stepper-motor-control" target="_blank">View on GitHub</a></p>
         </div>
     </div>
     <div id="project7" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
-            <h3>Secure Industrial Data Transmission and Security Assessment for ICS Systems</h3>
-            <p><strong>Abstract:</strong> A real-time chat app.</p>
-            <p><strong>Details:</strong> Developed a chat application using Socket.io and Node.js, supporting multiple users with real-time messaging and notifications.</p>
-            <p><strong>Skills Learned:</strong> Socket.io, Node.js, Real-Time Communication, Backend Development</p>
-            <p><a href="https://github.com/username/project7" target="_blank">View on GitHub</a></p>
+            <h3>Secure Industrial Data Transmission</h3>
+            <p><strong>Abstract:</strong> Enhanced data security.</p>
+            <p><strong>Details:</strong> Created a secure data transmission framework for ICS systems, including security assessments and encryption.</p>
+            <p><strong>Skills Learned:</strong> Data Security, ICS Systems, Network Protocols</p>
+            <p><a href="https://github.com/kchavan1307/secure-data-transmission" target="_blank">View on GitHub</a></p>
         </div>
     </div>
 
     <footer>
-        <p>© 2025 Your Name</p>
+        <p>© 2025 Krishna Chavan</p>
     </footer>
 
     <script src="script.js"></script>
