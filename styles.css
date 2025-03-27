@@ -1,100 +1,112 @@
-/* Global Styles */
+/* General Styling */
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #0a0a0a;
-    color: #fff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
 }
 
 /* Navigation Bar */
+header {
+    background: #000;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    background: linear-gradient(135deg, #00ffcc, #0066ff);
-    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.4);
+    gap: 20px;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #4facfe;
 }
 
-/* Layout */
-.container {
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero .highlight {
+    color: #4facfe;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Buttons */
+.buttons {
     display: flex;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    gap: 20px;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 30%;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.3);
-}
-
-.sidebar img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #00ffcc;
-}
-
-.sidebar a {
-    color: #00ffcc;
+.btn {
     text-decoration: none;
-    font-weight: bold;
-}
-
-.sidebar a:hover {
-    color: #ffcc00;
-}
-
-/* Main Content */
-main {
-    width: 70%;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.3);
-}
-
-h2 {
-    color: #00ffcc;
-    border-bottom: 2px solid #00ffcc;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-p {
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 5px 0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 18px;
+    transition: 0.3s;
 }
 
-li:hover {
-    color: #ffcc00;
+.btn.linkedin {
+    background: #0077b5;
+}
+
+.btn.github {
+    background: #333;
+}
+
+.btn.email {
+    background: #f39c12;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Sections */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+    }
 }
