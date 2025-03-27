@@ -1,195 +1,100 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
-
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0a0a0a;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #0f172a, #1e293b);
-    background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
-    color: white;
-    text-align: center;
-    overflow-x: hidden;
-    height: 100vh;
-}
-
-/* Background Gradient Animation */
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 /* Navigation Bar */
-header {
-    background: rgba(10, 25, 47, 0.9);
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    backdrop-filter: blur(8px);
-}
-
 nav {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+    padding: 15px;
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.4);
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
     transition: 0.3s;
-    letter-spacing: 1px;
 }
 
 nav a:hover {
-    color: #4facfe;
-    transform: scale(1.1);
-    text-shadow: 0 0 10px #4facfe, 0 0 20px #4facfe;
+    color: #ffcc00;
 }
 
-/* Hero Section */
-.hero {
-    margin-top: 100px;
-    padding: 60px;
-    position: relative;
-}
-
-.hero h1 {
-    font-size: 50px;
-    font-family: 'Orbitron', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    animation: glow 1.5s infinite alternate;
-}
-
-.hero .highlight {
-    color: #4facfe;
-    text-shadow: 0 0 10px #4facfe, 0 0 20px #4facfe;
-}
-
-/* Typing Animation */
-#typing-text {
-    font-size: 20px;
-    color: #ddd;
-    min-height: 24px;
-    animation: typing 2s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-/* Buttons */
-.buttons {
+/* Layout */
+.container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px;
 }
 
-.btn {
-    text-decoration: none;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Orbitron', sans-serif;
-    transition: 0.3s;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-    position: relative;
-}
-
-.btn.linkedin { background: #0077b5; }
-.btn.github { background: #333; }
-.btn.email { background: #f39c12; }
-
-.btn:hover {
-    opacity: 0.9;
-    transform: scale(1.08);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #4facfe, #00f2ff, #4facfe);
-    z-index: -1;
-    animation: moveBg 4s linear infinite;
-}
-
-@keyframes moveBg {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-}
-
-/* Sections */
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    margin: 50px auto;
-    width: 80%;
-    max-width: 600px;
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #1a1a1a;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    position: relative;
-    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.3);
 }
 
-/* Parallax Effect on Section Background */
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://via.placeholder.com/800x600'); /* Use a relevant background image URL */
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    transform: scale(1.2);
-    animation: parallax 6s infinite alternate;
-}
-
-@keyframes parallax {
-    0% { transform: scale(1.2); }
-    100% { transform: scale(1.3); }
-}
-
-/* SVG Waves */
-.waves {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.sidebar img {
+    width: 150px;
     height: 150px;
-    z-index: -2;
+    border-radius: 50%;
+    border: 4px solid #00ffcc;
 }
 
-/* Keyframe for Glowing Effect */
-@keyframes glow {
-    0% { text-shadow: 0 0 5px #4facfe, 0 0 10px #4facfe; }
-    100% { text-shadow: 0 0 15px #4facfe, 0 0 30px #4facfe; }
+.sidebar a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    width: 70%;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 204, 0.3);
+}
+
+h2 {
+    color: #00ffcc;
+    border-bottom: 2px solid #00ffcc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+li:hover {
+    color: #ffcc00;
 }

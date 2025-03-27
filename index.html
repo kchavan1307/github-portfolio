@@ -3,72 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Shivaji Chavan - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this is correct -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Krishna Chavan | Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="project.html">Projects</a> <!-- Link to Projects page (no target="_blank") -->
+        <a href="education.html">Education</a> <!-- Link to Education page (no target="_blank") -->
+        <a href="experience.html">Work Experience</a> <!-- Link to Work Experience page (no target="_blank") -->
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hi, I'm <span class="highlight">Krishna Shivaji Chavan</span></h1>
-        <p id="typing-text"></p>
-        <div class="buttons">
-            <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank" class="btn linkedin">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/kchavan1307" target="_blank" class="btn github">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="mailto:kc0058977@gmail.com" class="btn email">
-                <i class="fas fa-envelope"></i> Contact
-            </a>
-        </div>
-    </section>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="Michigan Tech - Career Fair 021324 140116.jpg" alt="Krishna Chavan">
+            <h2>Krishna Shivaji Chavan</h2>
+            <p>Cybersecurity Engineer | Security Analyst</p>
+            <p><strong>Email:</strong> <a href="mailto:kchavan@mtu.edu">kchavan@mtu.edu</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
+        </aside>
 
-    <!-- Sections with SVG Graphics -->
-    <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>
-            I am a cybersecurity professional and master's student in Mechatronics (Cybersecurity) at Michigan Technological University.
-            Passionate about protecting digital infrastructures and mitigating cyber threats.
-        </p>
-    </section>
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! I'm <strong>Krishna Shivaji Chavan</strong>, a passionate cybersecurity professional specializing in IT and OT security. 
+                    I am pursuing my Master’s in Mechatronics (Cybersecurity) at Michigan Technological University, focusing on securing industrial control systems, application security, and vulnerability management. 
+                    With hands-on experience in penetration testing, ethical hacking, and security operations, I aim to enhance the security posture of critical systems.
+                </p>
+            </section>
 
-    <section id="experience" class="card">
-        <h2>Experience</h2>
-        <p><strong>Research Assistant, Michigan Technological University</strong></p>
-        <p>Working on IT & OT Security, Cloud Security, and Threat Analysis.</p>
-    </section>
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>IT & OT Security</li>
+                    <li>Vulnerability Management</li>
+                    <li>Threat Analysis</li>
+                    <li>Application Security</li>
+                    <li>Security Engineering</li>
+                    <li>Penetration Testing</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 
-    <section id="projects" class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Industrial Control System Security Assessment</li>
-            <li>Web Application Penetration Testing Framework</li>
-        </ul>
-    </section>
-
-    <section id="skills" class="card">
-        <h2>Skills</h2>
-        <p>Cybersecurity, IT & OT Security, Threat Analysis, Security Engineering, Incident Response, Network Security</p>
-    </section>
-
-    <!-- SVG Background -->
-    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none">
-        <path d="M0,48 C30,90 60,10 90,60 C120,110 150,50 180,80 C210,110 240,20 270,50 C300,80 330,40 360,80 L360,120 L0,120 Z" fill="#141e30"></path>
-    </svg>
-
-    <script src="script.js"></script>
 </body>
 </html>
