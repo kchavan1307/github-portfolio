@@ -5,6 +5,7 @@ body {
     color: #333; /* Dark text for readability */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation Bar */
@@ -15,6 +16,9 @@ nav {
     padding: 12px;
     background-color: #003366; /* Dark blue background */
     color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
@@ -31,10 +35,8 @@ nav a:hover {
 
 /* Layout */
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 40px auto;
+    width: 100%;
+    margin: 0;
     padding: 20px;
 }
 
@@ -86,6 +88,12 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
