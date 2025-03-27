@@ -1,173 +1,108 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif; /* Common, clean font */
-    background-color: #f0f8ff; /* Light sky blue background */
-    color: #333; /* Dark text for good readability */
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 16px 0;
-    background-color: #003366; /* Dark blue background */
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ff9900; /* Hover color */
-}
-
-/* Layout */
-.container {
-    max-width: 1200px; /* Max container width */
-    width: 100%;
-    margin: 0 auto; /* Center content */
-    padding: 20px;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 25%; /* Smaller sidebar */
-    float: left; /* Float the sidebar to the left */
-    padding-right: 20px; /* Padding for spacing */
+header {
     text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
 }
 
-.sidebar img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #003366; /* Dark border for profile image */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.sidebar h2 {
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#theme-toggle {
     margin-top: 10px;
-    font-size: 22px;
-    color: #003366;
-    font-weight: 600;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
-.sidebar p {
-    font-size: 14px;
-    color: #555;
-    margin-top: 5px;
-}
-
-.sidebar a {
-    color: #003366;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.sidebar a:hover {
-    color: #ff9900; /* Hover color */
-}
-
-/* Main Content */
-main {
-    width: 70%; /* Main content width */
-    float: left; /* Float to the left to make room for the sidebar */
-    padding: 20px;
-}
-
-/* Sections */
 section {
-    margin-bottom: 30px;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h2 {
-    color: #003366;
-    font-size: 28px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
-}
-
-p {
-    line-height: 1.6;
-    font-size: 16px;
-    color: #333;
+    font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 20px;
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-li {
-    font-size: 16px;
-    margin-bottom: 8px;
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-li:hover {
-    color: #ff9900; /* Hover color for list items */
+.project p {
+    margin-bottom: 10px;
 }
 
-/* Contact Section */
-#contact {
-    margin-top: 40px;
-}
-
-#contact h2 {
-    font-size: 26px;
-    color: #003366;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 10px;
-}
-
-#contact p {
-    font-size: 16px;
-}
-
-#contact a {
-    color: #003366;
+.project a {
+    color: #007bff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-#contact a:hover {
-    color: #ff9900; /* Hover color for links */
+.project a:hover {
+    text-decoration: underline;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        float: none;
-        margin-bottom: 20px;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-size: 0.9em;
+}
 
-    main {
-        width: 100%;
-        float: none;
-    }
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
 
-    nav {
-        flex-direction: column;
-        padding: 10px;
-    }
+footer a:hover {
+    text-decoration: underline;
+}
 
-    nav a {
-        font-size: 16px;
-        padding: 10px;
-    }
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333;
+}
+
+body.dark-mode .project {
+    border-color: #555;
+}
+
+body.dark-mode a {
+    color: #1e90ff;
 }
