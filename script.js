@@ -1,5 +1,5 @@
-// Animate project cards and timeline items on scroll
-const animatedElements = document.querySelectorAll('.project-card, .timeline-item');
+// Animate project cards, timeline items, and contact info on scroll
+const animatedElements = document.querySelectorAll('.project-card, .timeline-item, .contact-info');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -13,7 +13,7 @@ animatedElements.forEach(element => observer.observe(element));
 
 // Add animate class styles in CSS
 document.styleSheets[0].insertRule(`
-    .project-card.animate, .timeline-item.animate {
+    .project-card.animate, .timeline-item.animate, .contact-info.animate {
         animation: slideUp 0.5s ease-out forwards;
     }
 `, 0);

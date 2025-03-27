@@ -134,6 +134,34 @@ body {
     text-decoration: underline;
 }
 
+/* Contact Section */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #333;
+}
+.contact-info i {
+    color: #ff6b6b;
+    margin-right: 0.5rem;
+}
+.contact-info a {
+    color: #4ecdc4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-info a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     padding: 1.5rem;
