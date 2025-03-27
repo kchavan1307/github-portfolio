@@ -112,7 +112,7 @@ body {
 /* Project Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider cards */
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
