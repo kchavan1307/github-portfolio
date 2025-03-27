@@ -215,6 +215,13 @@ body {
 .modal-content p {
     margin: 0.5rem 0;
 }
+.modal-content p strong {
+    color: #333; /* Default for labels */
+}
+.modal-content p:nth-child(4) { /* Targets "Skills Learned" paragraph */
+    color: #ff6b6b; /* Highlight skills in red */
+    font-style: italic;
+}
 .modal-content a {
     color: #ff6b6b;
     text-decoration: none;
