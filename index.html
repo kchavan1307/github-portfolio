@@ -1,57 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Chavan | Cybersecurity Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="project.html">Projects</a> <!-- Link to Projects page (no target="_blank") -->
-        <a href="education.html">Education</a> <!-- Link to Education page (no target="_blank") -->
-        <a href="experience.html">Work Experience</a> <!-- Link to Work Experience page (no target="_blank") -->
-    </nav>
-
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <img src="Michigan Tech - Career Fair 021324 140116.jpg" alt="Krishna Chavan">
-            <h2>Krishna Shivaji Chavan</h2>
-            <p>Cybersecurity Engineer | Security Analyst</p>
-            <p><strong>Email:</strong> <a href="mailto:kchavan@mtu.edu">kchavan@mtu.edu</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank">linkedin.com/in/krishna-chavan</a></p>
-        </aside>
-
-        <!-- Main Content -->
-        <main>
-            <!-- About Section -->
-            <section id="about">
-                <h2>About Me</h2>
-                <p>
-                    Hi there! I'm <strong>Krishna Shivaji Chavan</strong>, a passionate cybersecurity professional specializing in IT and OT security. 
-                    I am pursuing my Master’s in Mechatronics (Cybersecurity) at Michigan Technological University, focusing on securing industrial control systems, application security, and vulnerability management. 
-                    With hands-on experience in penetration testing, ethical hacking, and security operations, I aim to enhance the security posture of critical systems.
-                </p>
-            </section>
-
-            <!-- Skills Section -->
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>IT & OT Security</li>
-                    <li>Vulnerability Management</li>
-                    <li>Threat Analysis</li>
-                    <li>Application Security</li>
-                    <li>Security Engineering</li>
-                    <li>Penetration Testing</li>
-                </ul>
-            </section>
-        </main>
+export default function HomePage() {
+  return (
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-gray-900 to-gray-800 text-white text-center p-4">
+      <header className="w-full py-4 bg-gray-900 shadow-lg fixed top-0 flex justify-center">
+        <nav className="flex gap-6">
+          <a href="#about" className="hover:text-blue-400">About</a>
+          <a href="#experience" className="hover:text-blue-400">Experience</a>
+          <a href="#projects" className="hover:text-blue-400">Projects</a>
+          <a href="#skills" className="hover:text-blue-400">Skills</a>
+        </nav>
+      </header>
+      
+      <div className="mt-20 flex flex-col items-center">
+        <motion.h1 
+          className="text-5xl font-bold mb-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Hi, I'm <span className="text-blue-400">Krishna Shivaji Chavan</span>
+        </motion.h1>
+        
+        <motion.p 
+          className="text-lg mb-6 max-w-xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Cybersecurity professional with expertise in IT & OT Security, Threat Analysis, and Security Engineering.
+        </motion.p>
+        
+        <motion.div 
+          className="flex gap-4 mb-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <Button asChild>
+            <a href="https://linkedin.com/in/krishna-chavan-4b250a173" target="_blank" className="flex items-center gap-2">
+              <FaLinkedin /> LinkedIn
+            </a>
+          </Button>
+          <Button asChild>
+            <a href="https://github.com/kchavan1307" target="_blank" className="flex items-center gap-2">
+              <FaGithub /> GitHub
+            </a>
+          </Button>
+          <Button asChild>
+            <a href="mailto:kc0058977@gmail.com" className="flex items-center gap-2">
+              <FaEnvelope /> Contact
+            </a>
+          </Button>
+        </motion.div>
+      </div>
+      
+      <motion.section id="about" 
+        className="max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-lg my-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+      >
+        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+        <p className="text-lg">
+          I am a cybersecurity professional and master's student in Mechatronics (Cybersecurity) at Michigan Technological University. 
+          I specialize in securing IT & OT environments, threat analysis, and security engineering. 
+          Passionate about protecting digital infrastructures and mitigating cyber threats.
+        </p>
+      </motion.section>
+      
+      <motion.section id="experience" className="max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-lg my-10">
+        <h2 className="text-3xl font-semibold mb-4">Experience</h2>
+        <p className="text-lg">Research Assistant, Michigan Technological University - Working on IT & OT Security, Cloud Security, and Threat Analysis.</p>
+      </motion.section>
+      
+      <motion.section id="projects" className="max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-lg my-10">
+        <h2 className="text-3xl font-semibold mb-4">Projects</h2>
+        <p className="text-lg">1. Industrial Control System Security Assessment</p>
+        <p className="text-lg">2. Web Application Penetration Testing Framework</p>
+      </motion.section>
+      
+      <motion.section id="skills" className="max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-lg my-10">
+        <h2 className="text-3xl font-semibold mb-4">Skills</h2>
+        <p className="text-lg">Cybersecurity, IT & OT Security, Threat Analysis, Security Engineering, Incident Response, Network Security</p>
+      </motion.section>
     </div>
-
-</body>
-</html>
+  );
+}
