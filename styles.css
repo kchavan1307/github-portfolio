@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif; /* More professional font */
-    background-color: #f4f4f4; /* Light background for a clean, professional look */
+    font-family: 'Arial', sans-serif; /* Professional font */
+    background-color: #87CEEB; /* Light Blue/Sky Blue background */
     color: #333; /* Dark text for readability */
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ nav {
     justify-content: center;
     gap: 20px;
     padding: 15px;
-    background-color: #003366; /* A professional dark blue color */
+    background-color: #003366; /* Dark blue navigation bar */
     color: #fff;
 }
 
